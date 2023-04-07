@@ -1,0 +1,161 @@
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0;
+  padding: 0 3.2rem;
+}
+.card {
+  max-width: 30rem;
+  margin: 6rem auto;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+}
+
+.textbox {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.icon-music {
+  max-width: 15%;
+}
+
+.payment-details {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.plan-name {
+  font-weight: 900;
+}
+
+.price {
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  display: block;
+  margin-top: 0.6rem;
+}
+
+.plan-name {
+  margin-left: 1.3rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-change:link,
+.plan-change:visited {
+  display: block;
+  margin-left: auto;
+  padding-bottom: 1px;
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s ease-in-out;
+}
+
+.plan-change:hover,
+.plan-change:active {
+  color: rgba(56, 41, 224, 0.75);
+  border-bottom: 1px solid transparent;
+}
+.payment-btn:link,
+.payment-btn:visited,
+.cancel-btn:link,
+cancel-btn:visited {
+  display: block;
+  padding: 1.2rem 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-btn:link,
+.payment-btn:visited {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  box-shadow: 0 0.5rem 1rem 0.3rem rgba(56, 41, 224, 0.3);
+}
+
+.cancel-btn:link,
+.cancel-btn:visited {
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn:hover,
+.cancel-btn:active {
+  color: hsl(223, 47%, 23%);
+}
+
+.payment-btn:hover,
+.payment-btn:active {
+  background-color: rgba(56, 41, 224, 0.75);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+}
